@@ -1,0 +1,268 @@
+fileFormatVersion: 2
+guid: 202944df1cefaab45b5d5f6131b1113e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Space Invaders Sprites
+    21300002: Alien1A
+    21300004: Alien1B
+    21300006: Alien2A
+    21300008: Alien2B
+    21300010: Alien3A
+    21300012: Alien3B
+    21300014: BoltA
+    21300016: BoltB
+    21300018: Explosion
+    21300020: Barrier
+    21300022: UFO
+    21300024: Player
+    21300026: PlayerDeathA
+    21300028: PlayerDeathB
+    21300030: Space Invaders Sprites_14
+    21300032: Space Invaders Sprites_15
+    21300034: Missile
+    21300036: BombA
+    21300038: BombB
+    21300040: Color Pallette
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Alien1A
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 17
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien1B
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 17
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien2A
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 17
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien2B
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 17
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien3A
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 17
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien3B
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 17
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BoltA
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 17
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BoltB
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 17
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 17
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Barrier
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: UFO
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 3
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerDeathA
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerDeathB
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 3
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Space Invaders Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Space Invaders Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Missile
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 5
+        width: 1
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BombA
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 18
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BombB
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 18
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Color Pallette
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 14
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: a87fc7a0631c4e84bad1522e2b2eaa72
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Galaga Sprites2
+    21300002: Galaga Sprites2_0
+    21300004: Galaga Sprites2_1
+    21300006: Galaga Sprites2_2
+    21300008: Galaga Sprites2_3
+    21300010: Galaga Sprites2_4
+    21300012: Galaga Sprites2_5
+    21300014: Galaga Sprites2_6
+    21300016: Galaga Sprites2_7
+    21300018: Galaga Sprites2_8
+    21300020: Galaga Sprites2_9
+    21300022: Galaga Sprites2_10
+    21300024: Galaga Sprites2_11
+    21300026: Galaga Sprites2_12
+    21300028: Galaga Sprites2_13
+    21300030: Galaga Sprites2_14
+    21300032: Galaga Sprites2_15
+    21300034: Galaga Sprites2_16
+    21300036: Galaga Sprites2_17
+    21300038: Galaga Sprites2_18
+    21300040: Galaga Sprites2_19
+    21300042: Galaga Sprites2_20
+    21300044: Galaga Sprites2_21
+    21300046: Galaga Sprites2_22
+    21300048: Galaga Sprites2_23
+    21300050: Galaga Sprites2_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Galaga Sprites2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 78
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 86
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_3
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 83
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_4
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 84
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_5
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 49
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_6
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 46
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 86
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 46
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 46
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_10
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 56
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 57
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_12
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 52
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 22
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_14
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 22
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_15
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 30
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_16
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 31
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_17
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 32
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_18
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 31
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_19
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 32
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_20
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 31
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_21
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_22
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_23
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Galaga Sprites2_24
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
