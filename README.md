@@ -1,4 +1,4 @@
-Scratchy Unity Game Template
-============================
+Scratchy Unity Space Invaders Tutorial
+======================================
 
-An empty Unity game template set-up with Scratchy Unity and source control options.
+A tutorial for creating a Space Invaders type game using the ScratchyUnity toolkit.
