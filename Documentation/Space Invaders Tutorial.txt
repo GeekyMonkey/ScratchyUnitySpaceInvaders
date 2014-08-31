@@ -1,29 +1,29 @@
-Setup
-	Start Unity 4.5
-	    Create a new project and select an empty folder. 
-			Setup Defaults = 2D
-			Press Create
-	Save the workspace scene
-		File - Save Scene
-			Create a "scenes" folder in the assets folder
-			Name it Workspace (Crafting Table)
-	Camera setup
-		Click on the MainCamera in the scene and in the inspector change the background color to dark grey (different from game color)
-		Change the size from 5 to 200
-		In the game window change Free Aspect to 16x9
-	Add beginning assets	
-		Right click on Assets and create folders for Graphics, Sounds, Fonts, Prefabs, ScratchyUnity
-			Drag given folders into these folders. Prefabs will be blank for now.
+Setup Source Control
+    Create GitHub account or login
+	Search for ScrachyUnitySpaceInvaders
+	Use the FORK button on the top right
+	On the right find the CLONE url and copy this to the clipboard
+	Open SourceTree and press Clone/New
+	Paste the clone url into the Source Path / URL
+	Create a folder for the project in your documents folder and use this for the destination
+	Press Clone
+
+Start Unity
+	Give a tour of the windows
+	Drag the game view to the bottom to the left of the inspector
+	Open assets scenes and look at the 3 scenes
+
 		Drag the sprites graphic onto the scene
 			With the mouse over the scene press F to zoom to that sprite
+			Alt-Right drag to zoom in
 			Notice the edges aren't crisp
-				For crisp edges select all sprites (shift click or CTRL-A)
+				For crisp edges select the sprite graphic
 				In the inspector change Filter Mode to POINT
-				Also change Format to TrueColor
+				Also change Format from compressed to TrueColor
 				Change the Pixels to Units to 1
 				Press APPLY
 	Save the scene, and save the project
-	
+
 Split Sprites
     In the graphics folder select the sprites graphic
 	In the inspector change Sprite Mode from Single to Multiple
@@ -44,11 +44,12 @@ Create Prefabs
 		Drag the Player1 sprite onto the hierarchy or scene (Crafting Table)
 		If you dragged it onto the scene, you may need to clean up the transforms.
 			In the inspector under transforms use gear menu reset the transforms
-		In the sprite renderer we need to set the color
+		If we're using Space Invaders In the sprite renderer we need to set the color
 			Click the white color bar to brig up the color editor
 			Click the dropper icon to pick a color.
 			Pick the green color from the sprite graphic with the white red and green boxes.
 	Save the player
+		In the assets folder create a prefab folder
 		Drag the player from the hierarchy into the Assets Prefabs folder
 		Delete it from the scene hierarchy
 		Save Scene, Save Project
@@ -58,7 +59,7 @@ Create Prefabs
 		In the inspector rename it to Alien1
 		Under Transform use the Gear menu to reset the position to zeros
 		Click Add Component and select New Script
-		Type in AlienScript and set the language to C#
+		Type in AlienSprite and set the language to C#
 		Double click this script to open it in the script editor app
 		Double click on MonoBehaviour and change this to ScratchySprite
 		Delete the Start and Update functions
@@ -84,22 +85,19 @@ Create Prefabs
 		Save scene and project
 		
 Put together a test scene
-	Select File - New Scene
-	File - Save Scene
-	Select the Scene folder and type TestScene
-	Select the camera and change the size to 200 and pick a background color (black)
+	Open the Scene folder and select the Test Scene
 	Drag our player and a few aliens onto the scene
 	Press Play and see the program running in the Game window
 	Important! Stop the game. Any changes made while the game is playing will be lost!
 	
 Add some animation
-	Select any of the animations in the prefab list
+	Select any of the aliens in the prefab list
 	Double click the AlienScript
 	Type override and press space. Select OnUpdate (runs every frame)
-	Type in NextCostume()
+	Replace base with in NextCostume()
 	Press CTRL+S to save the script and ALT-TAB to go back to unity.
 	Run the program and see aliens going way too fast
-	Go back to the script editor and delete the OnFixedUpdate function
+	Go back to the script editor and delete the OnUpdate function
 	Type Override and press space.
 	Select OnStart
 	replace base.OnStart with Forever(1, NextCostume)
@@ -116,32 +114,32 @@ Controlling the player
 	You can delete the base.onUpdate()
 	Type 
 	    float direction = 0;
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             direction = -1;
-        } else if (Input.GetKeyDown(KeyCode.RightArrow)) {
+        } else if (Input.GetKey(KeyCode.RightArrow)) {
             direction = 1;
         }
         X += direction;
 	Ctrl+S to save the script and go back to unity and run the program
 	Notice that the movement is jerky when you hold down the arrow keys.
 	the update function isn't happening at a steady rate. We can correct for this.
-	We also want to be able to control the player's speed. So we'll add a m (variable)
+	We also want to be able to control the player's speed. So we'll add a Speed (variable)
 	Stop the game and edit the player script.
 	Add a field for speed in px/second			public float Speed = 100;
 	Change         								X += direction * Speed * Time.deltaTime;
 	Ctrl+S to save the script and go back to unity and run the program.
-	While the game is running try selecing the player object in the hierarchy and chaning the speed variable
-	Stop the game and notice the speed variable goes back to its initial value
+	While the game is running try selecing the player object in the hierarchy and changing the speed variable
+	Stop the game and notice the speed variable goes back to its initial value. Set this to the value you want.
 	Save the scene and the project
 	
 The Missile
-	In Assets Scenes select workspace
+	In Assets Scenes select crafting table
 	Expand the graphics and drag the missile onto the hierarchy
 	Add Component - Audio - Audio Source
 	Press the gear next to Audio Clip and pick ShipFire
 	Drag the doppler level to 0
-	Press Add Component - New Script and type MissileScript
+	Press Add Component - New Script and type MissileSprite
 	Open the missile script in the code editor
 	Change MonoBehavior to ScratchySprite
 	Delete the start and update functions
@@ -152,7 +150,7 @@ The Missile
 	Enter 									Y = Y + Speed * Time.deltaTime;
 	CTRL+S to save the script
 	switch back to unity and drag this from the workspace to the prefabs
-	Delete it from the workspace
+	Delete it from the crafting table
 	Switch to our test scene and drag the missile just above the player
 	Play the game and the missile will make its sound and shoot up the screen, then disappear from the hierarchy after 5 seconds
 	
@@ -169,6 +167,123 @@ Shooting the missile
 	In the test scene delete the Missile object
 	Run the program and try moving and shooting
 	Stop, save the scene and project
+	
+Checking missile to alien collisions
+    Open the missile script
+		var deadAlien = GetTouchingSprite<AlienSprite>();
+        if (deadAlien != null)
+        {
+            deadAlien.Destroy();
+            this.Destroy();
+        }
+		
+		We'll get an error because the graphics can't be tested for collisions
+		In the graphics folder select the spritesheet
+		In the inspector switch to debug mode
+		Change texture type to Advanced
+		Check Read/Write enabled
+		Go back to Normal mode (not debug)
+		Run again (success)
+		
+Kids love explosions
+	Go to the crafting table
+	Drag the first explosion graphic to the heirarchy
+	Create the script ExplosionSprite, rename and empty
+	In Unity set the number of costumes and drag in the graphics
+	In OnStart enter					 Repeat(4, 0.1f, NextCostume);
+        Wait(0.4f, Destroy);
+	Add component audio - audio source
+	Press the gear and select alien death
+	doppler = 0
+	Linear rolloff
+	Make this a prefab and clear the crafting table
+	
+Missiles Explode
+	Open the missile script and add a public GameObject ExplosionType
+	Clone(ExplosionType, deadAlien.transform.position);
+	Ctrl+S to save and go to unity and drag the explosion to the explosion type
+	Go to the testing scene and play it
+	
+Put the pieces into a game
+    Edit the starfield graphic (Filter = Point, Format = TrueColor)
+	Pixels to Units = 4
+	Drag the starfield graphic to the scene
+	Set the z position to 1 so it's behind the action
+	Drag the player onto the hierarchy
+	Drag on the scene until the position looks right in the game window
+	Game Object - Create Empty - name it GameManager
+	Componentn - Add Script - GameManager
+	Change from MonoBehavior to ScratchySprite
+	Delete the functions
+		public GameObject[] AlienTypes;
+		public int Columns = 10;
+	Go to unity and drag the prefabs into the list
+
+    public void CreateSwarm()
+    {
+        int row;
+        int column;
+
+        for (row = 0; row < AlienTypes.Length; row++)
+        {
+            for (column = 0; column < Columns; column++)
+            {
+                var pos = new Vector3(column * 20, row * 20);
+                var alien = Clone(AlienTypes[row], pos);
+            }
+        }
+    }
+
+    public override void OnStart()
+    {
+        CreateSwarm();
+    }
+	
+Move the Swarm
+	In OnStart add     Forever(1, MoveSwarm);
+    new field			public float SwarmStep = 20;
+	public void MoveSwarm()
+    {
+        var aliens = GetSprites<AlienSprite>();
+        foreach (var alien in aliens)
+        {
+            alien.X += SwarmStep;
+        }
+    }
+
+Reverse when hitting the edge
+    public void MoveSwarm()
+    {
+        bool hitEdge = false;
+        var aliens = GetSprites<AlienSprite>();
+        foreach (var alien in aliens)
+        {
+            alien.X += SwarmStep;
+            if (alien.IsTouchingEdge())
+            {
+                hitEdge = true;
+            }
+        }
+        if (hitEdge)
+        {
+            SwarmStep = SwarmStep * -1;
+            foreach (var alien in aliens)
+            {
+                alien.Y -= 20;
+            }
+        }
+    }
+	
+Scoring
+	
+
+
+	
+	
+
+	
+	
+	
 	
 	
 		
