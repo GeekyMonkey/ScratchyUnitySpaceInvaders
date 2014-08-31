@@ -6,11 +6,11 @@ using System.Collections.Generic;
 public class ScratchyObject : MonoBehaviour
 {
     private int TimerLimit = 20;
-    private ScrathyTimer[] Timers;
+    private ScratchyTimer[] Timers;
 
     public ScratchyObject()
     {
-        Timers = new ScrathyTimer[TimerLimit];
+        Timers = new ScratchyTimer[TimerLimit];
     }
 
     // Use this for initialization
@@ -31,7 +31,7 @@ public class ScratchyObject : MonoBehaviour
         // Update any timers
         for (int i = 0; i < Timers.Length; i++ )
         {
-            ScrathyTimer t = Timers[i];
+            ScratchyTimer t = Timers[i];
             if (t != null && t.Active)
             {
                 t.Update(Time.fixedDeltaTime);
@@ -52,31 +52,31 @@ public class ScratchyObject : MonoBehaviour
     {
     }
 
-    public ScrathyTimer Wait(float delay, TimerCallback callback)
+    public ScratchyTimer Wait(float delay, TimerCallback callback)
     {
-        ScrathyTimer timer = GetTimerFromPool();
+        ScratchyTimer timer = GetTimerFromPool();
         timer.Init(delay, false, callback);
         return timer;
     }
 
-    public ScrathyTimer Forever(float every, TimerCallback callback)
+    public ScratchyTimer Forever(float every, TimerCallback callback)
     {
-        ScrathyTimer timer = GetTimerFromPool();
+        ScratchyTimer timer = GetTimerFromPool();
         timer.Init(every, true, callback);
         return timer;
     }
 
-    public ScrathyTimer Repeat(int count, float every, TimerCallback callback)
+    public ScratchyTimer Repeat(int count, float every, TimerCallback callback)
     {
-        ScrathyTimer timer = GetTimerFromPool();
+        ScratchyTimer timer = GetTimerFromPool();
         timer.Init(every, true, callback);
         timer.CountLimit = count;
         return timer;
     }
 
-    private ScrathyTimer GetTimerFromPool()
+    private ScratchyTimer GetTimerFromPool()
     {
-        ScrathyTimer timer = null;
+        ScratchyTimer timer = null;
         int timerIndex = -1;
         for (int i = 0; i < Timers.Length; i++ )
         {
@@ -93,7 +93,7 @@ public class ScratchyObject : MonoBehaviour
         }
         if (timer == null)
         {
-            timer = new ScrathyTimer();
+            timer = new ScratchyTimer();
             this.Timers[timerIndex] = timer;
         }
         return timer;
@@ -142,4 +142,41 @@ public class ScratchyObject : MonoBehaviour
         var angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle + angleAdjust);
     }
+
+    /// <summary>
+    /// Clone another object at the location of this ScratchySprite
+    /// </summary>
+    /// <param name="prefab">The prefab to instantiate</param>
+    /// <returns>The new cloned object</returns>
+    public ScratchySprite Clone(GameObject prefab)
+    {
+        return Clone(prefab, this.transform.position, this.transform.rotation);
+    }
+
+    public static ScratchySprite Clone(GameObject prefab, Vector3 position)
+    {
+        return Clone(prefab, position, Quaternion.identity);
+    }
+
+    public static ScratchySprite Clone(GameObject prefab, Vector3 position, Quaternion rotation)
+    {
+        var gameObject = (GameObject)Instantiate(prefab, position, Quaternion.identity);
+        ScratchySprite sprite;
+        try
+        {
+            sprite = gameObject.GetComponent<ScratchySprite>();
+        }
+        catch
+        {
+            sprite = null;
+        }
+
+        if (sprite == null)
+        {
+            throw new Exception("Clone only works for ScratchySprite objects");
+        }
+
+        return sprite;
+    }
+
 }
