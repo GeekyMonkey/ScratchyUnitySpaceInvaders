@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   m_Layer: 0
-  m_Name: Player_Galaga
+  m_Name: SI_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,8 +48,8 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 0c7004f83e33b8e448e19557254ac69b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300024, guid: e2c0c4e8b76327547b7baec836b63aca, type: 3}
+  m_Color: {r: .0980392173, g: .996078432, b: .0980392173, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
