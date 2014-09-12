@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51dad1781f6917646843bf4f1de544bb
+guid: 25977920d2c8b38409d19b7bd7d03eca
 TextureImporter:
   fileIDToRecycleName:
     21300000: starfield
@@ -25,10 +25,10 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 1
-    aniso: 1
+    filterMode: -1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

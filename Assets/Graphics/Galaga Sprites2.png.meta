@@ -1,37 +1,12 @@
 fileFormatVersion: 2
-guid: a87fc7a0631c4e84bad1522e2b2eaa72
+guid: 0c7004f83e33b8e448e19557254ac69b
 TextureImporter:
   fileIDToRecycleName:
     21300000: Galaga Sprites2
-    21300002: Galaga Sprites2_0
-    21300004: Galaga Sprites2_1
-    21300006: Galaga Sprites2_2
-    21300008: Galaga Sprites2_3
-    21300010: Galaga Sprites2_4
-    21300012: Galaga Sprites2_5
-    21300014: Galaga Sprites2_6
-    21300016: Galaga Sprites2_7
-    21300018: Galaga Sprites2_8
-    21300020: Galaga Sprites2_9
-    21300022: Galaga Sprites2_10
-    21300024: Galaga Sprites2_11
-    21300026: Galaga Sprites2_12
-    21300028: Galaga Sprites2_13
-    21300030: Galaga Sprites2_14
-    21300032: Galaga Sprites2_15
-    21300034: Galaga Sprites2_16
-    21300036: Galaga Sprites2_17
-    21300038: Galaga Sprites2_18
-    21300040: Galaga Sprites2_19
-    21300042: Galaga Sprites2_20
-    21300044: Galaga Sprites2_21
-    21300046: Galaga Sprites2_22
-    21300048: Galaga Sprites2_23
-    21300050: Galaga Sprites2_24
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -51,21 +26,21 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
-  nPOTScale: 1
+    wrapMode: -1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1
-  alphaIsTransparency: 0
-  textureType: 0
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites: []

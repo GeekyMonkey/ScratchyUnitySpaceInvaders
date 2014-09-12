@@ -1,32 +1,12 @@
 fileFormatVersion: 2
-guid: 202944df1cefaab45b5d5f6131b1113e
+guid: e2c0c4e8b76327547b7baec836b63aca
 TextureImporter:
   fileIDToRecycleName:
     21300000: Space Invaders Sprites
-    21300002: Alien1A
-    21300004: Alien1B
-    21300006: Alien2A
-    21300008: Alien2B
-    21300010: Alien3A
-    21300012: Alien3B
-    21300014: BoltA
-    21300016: BoltB
-    21300018: Explosion
-    21300020: Barrier
-    21300022: UFO
-    21300024: Player
-    21300026: PlayerDeathA
-    21300028: PlayerDeathB
-    21300030: Space Invaders Sprites_14
-    21300032: Space Invaders Sprites_15
-    21300034: Missile
-    21300036: BombA
-    21300038: BombB
-    21300040: Color Pallette
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -45,22 +25,22 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 1
-    aniso: 1
+    filterMode: -1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
-  nPOTScale: 1
+    wrapMode: -1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 1
-  alphaIsTransparency: 0
-  textureType: 0
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites: []
