@@ -7,8 +7,10 @@ Setup Source Control
 	Paste the clone url into the Source Path / URL
 	Create a folder for the project in your documents folder and use this for the destination
 	Press Clone
+-- BRANCH: 00-Start --
 
 Start Unity
+	Window - Layouts - Revert Factory Settings
 	Give a tour of the windows
 	Drag the game view to the bottom to the left of the inspector
 	Open assets scenes and look at the 3 scenes
@@ -23,6 +25,7 @@ Start Unity
 				Change the Pixels to Units to 1
 				Press APPLY
 	Save the scene, and save the project
+-- BRANCH: 01-GraphicsImported --
 
 Split Sprites
     In the graphics folder select the sprites graphic
@@ -37,6 +40,7 @@ Split Sprites
 	Close the sprite editor
 	In the graphics assets expand the sprites graphics by clicking the right arrow circle
 	Save Scene, Save Project
+-- BRANCH: 02-SpritesSplit --
 
 Create Prefabs
 	Create the player
@@ -53,6 +57,7 @@ Create Prefabs
 		Drag the player from the hierarchy into the Assets Prefabs folder
 		Delete it from the scene hierarchy
 		Save Scene, Save Project
+-- BRANCH: 03-PlayerPrefab --
 		
 	Create Alien 1
 		Drag the Alien1A sprite set onto the scene or hierarchy
@@ -83,6 +88,7 @@ Create Prefabs
 		Repeat for Alien 3
 		Our workspace is now empty, look in the prefabs folder and see our 4 sprites set-up
 		Save scene and project
+-- BRANCH: 04-AlienPrefabs --
 		
 Put together a test scene
 	Open the Scene folder and select the Test Scene
