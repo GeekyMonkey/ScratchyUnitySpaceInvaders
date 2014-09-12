@@ -109,7 +109,8 @@ Add some animation
 	replace base.OnStart with Forever(1, NextCostume)
 	CTRL+S to save and run the game in unity
 	Stop the game and save the scene and save the project
-
+-- BRANCH: 05-AlienAnimation --
+	
 Controlling the player
 	Open the Asset - Prefabs and select Player
 	Click Add Component and select new Script
