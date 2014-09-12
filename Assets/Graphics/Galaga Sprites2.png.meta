@@ -3,6 +3,33 @@ guid: 0c7004f83e33b8e448e19557254ac69b
 TextureImporter:
   fileIDToRecycleName:
     21300000: Galaga Sprites2
+    21300002: Player1
+    21300004: Player2
+    21300006: PlayerDeath1
+    21300008: PlayerDeath2
+    21300010: PlayerDeath3
+    21300012: Explosion4
+    21300014: Explosion5
+    21300016: PlayerDeath4
+    21300018: Alien1A
+    21300020: Alien1B
+    21300022: Explosion1
+    21300024: Explosion2
+    21300026: Explosion3
+    21300028: Alien2A
+    21300030: Alien2B
+    21300032: Alien5
+    21300034: Alien6
+    21300036: Alien7
+    21300038: Alien8
+    21300040: Alien9
+    21300042: Alien10
+    21300044: Alien3A
+    21300046: Alien3B
+    21300048: Alien4A
+    21300050: Alien4B
+    21300052: Missile1
+    21300054: Missile2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -32,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -43,6 +70,276 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Player1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 94
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerDeath1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 86
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerDeath2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 85
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerDeath3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 85
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 50
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 48
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerDeath4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 86
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien1A
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 46
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien1B
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 46
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 59
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 57
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 54
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien2A
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 22
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien2B
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 22
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien5
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 30
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien6
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 31
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien7
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 32
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien8
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 31
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien9
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 32
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien10
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 31
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien3A
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien3B
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien4A
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien4B
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Missile1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 78
+        width: 3
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Missile2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 78
+        width: 3
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

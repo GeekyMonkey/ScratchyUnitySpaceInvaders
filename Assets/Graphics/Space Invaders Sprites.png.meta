@@ -3,6 +3,26 @@ guid: e2c0c4e8b76327547b7baec836b63aca
 TextureImporter:
   fileIDToRecycleName:
     21300000: Space Invaders Sprites
+    21300002: Alien1A
+    21300004: Alien1B
+    21300006: Alien2A
+    21300008: Alien2B
+    21300010: Alien3A
+    21300012: Alien3B
+    21300014: Zap1
+    21300016: Zap2
+    21300018: Explosion
+    21300020: Shield
+    21300022: Alien4
+    21300024: Player
+    21300026: PlayerDeath1
+    21300028: PlayerDeath2
+    21300030: Color_Green
+    21300032: Bomb1
+    21300034: Bomb2
+    21300036: Missile
+    21300038: Color_White
+    21300040: Color_Red
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -32,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -43,6 +63,206 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Alien1A
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 17
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien1B
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 17
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien2A
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 17
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien2B
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 17
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien3A
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 17
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien3B
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 17
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Zap1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 17
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Zap2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 17
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Explosion
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 17
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Shield
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Alien4
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Player
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 3
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerDeath1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayerDeath2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 3
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Color_Green
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bomb1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 17
+        width: 3
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bomb2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 17
+        width: 3
+        height: 8
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Missile
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3
+        width: 1
+        height: 7
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Color_White
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Color_Red
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
