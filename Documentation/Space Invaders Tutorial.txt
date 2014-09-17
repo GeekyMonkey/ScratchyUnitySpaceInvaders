@@ -219,7 +219,7 @@ Put the pieces into a game
 	Drag the player onto the hierarchy
 	Drag on the scene until the position looks right in the game window
 	Game Object - Create Empty - name it GameManager
-	Componentn - Add Script - GameManager
+	Components - Add Script - GameManager
 	Change from MonoBehavior to ScratchySprite
 	Delete the functions
 		public GameObject[] AlienTypes;
@@ -281,6 +281,9 @@ Reverse when hitting the edge
             }
         }
     }
+--BRANCH: 10-MoveSwarm --
+	
+	
 	
 Scoring
 	
