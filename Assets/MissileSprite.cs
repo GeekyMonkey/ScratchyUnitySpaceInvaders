@@ -12,6 +12,15 @@ public class MissileSprite : ScratchySprite {
 
     public override void OnUpdate()
     {
+        // Move the missile
         Y = Y + Speed * Time.deltaTime;
+
+        // Collide with aliens
+        var deadAlien = GetTouchingSprite<AlienSprite>();
+        if (deadAlien != null)
+        {
+            deadAlien.Destroy();
+            this.Destroy();
+        }
     }
 }
