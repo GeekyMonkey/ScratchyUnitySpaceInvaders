@@ -42,6 +42,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Costumes: []
   Speed: 100
+  MissileType: {fileID: 100000, guid: 461ab2b915dc73c458baa6e0996458fe, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
