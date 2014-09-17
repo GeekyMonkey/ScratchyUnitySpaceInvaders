@@ -146,7 +146,7 @@ The Missile
 	Expand the graphics and drag the missile onto the hierarchy
 	Add Component - Audio - Audio Source
 	Press the gear next to Audio Clip and pick ShipFire
-	Drag the doppler level to 0
+	Drag the doppler level to 0 and the Volume Rollove to Linear
 	Press Add Component - New Script and type MissileSprite
 	Open the missile script in the code editor
 	Change MonoBehavior to ScratchySprite
@@ -161,7 +161,6 @@ The Missile
 	Delete it from the crafting table
 	Switch to our test scene and drag the missile just above the player
 	Play the game and the missile will make its sound and shoot up the screen, then disappear from the hierarchy after 5 seconds
--- BRANCH: 07-Missile --
 	
 Shooting the missile
 	Open the player script and add a field			    public GameObject MissileType;
@@ -176,10 +175,10 @@ Shooting the missile
 	In the test scene delete the Missile object
 	Run the program and try moving and shooting
 	Stop, save the scene and project
--- BRANCH: 08-Shooting --
 	
 Checking missile to alien collisions
-    Open the missile script
+    Open the missile script and add this to OnUpdate
+	
 		var deadAlien = GetTouchingSprite<AlienSprite>();
         if (deadAlien != null)
         {
@@ -189,12 +188,10 @@ Checking missile to alien collisions
 		
 		We'll get an error because the graphics can't be tested for collisions
 		In the graphics folder select the spritesheet
-		In the inspector switch to debug mode
-		Change texture type to Advanced
+		In the inspector switch texture type to Advanced
 		Check Read/Write enabled
-		Go back to Normal mode (not debug)
 		Run again (success)
--- BRANCH: 09-DestroyAliens --
+-- BRANCH: 07-Missile --
 		
 Kids love explosions
 	Go to the crafting table
