@@ -4,6 +4,7 @@ using System.Collections;
 public class GameManager : ScratchySprite {
     public GameObject[] AlienTypes;
     public int Columns = 10;
+    public float SwarmStep = 20;
 
     public void CreateSwarm()
     {
@@ -23,5 +24,29 @@ public class GameManager : ScratchySprite {
     public override void OnStart()
     {
         CreateSwarm();
+
+        Forever(1, MoveSwarm);
+    }
+
+    public void MoveSwarm()
+    {
+        bool hitEdge = false;
+        var aliens = GetSprites<AlienSprite>();
+        foreach (var alien in aliens)
+        {
+            alien.X += SwarmStep;
+            if (alien.IsTouchingEdge())
+            {
+                hitEdge = true;
+            }
+        }
+        if (hitEdge)
+        {
+            SwarmStep = SwarmStep * -1;
+            foreach (var alien in aliens)
+            {
+                alien.Y -= 20;
+            }
+        }
     }
 }

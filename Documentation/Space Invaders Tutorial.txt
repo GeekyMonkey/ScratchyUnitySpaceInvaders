@@ -260,27 +260,27 @@ Move the Swarm
     }
 
 Reverse when hitting the edge
-    public void MoveSwarm()
-    {
-        bool hitEdge = false;
-        var aliens = GetSprites<AlienSprite>();
-        foreach (var alien in aliens)
-        {
-            alien.X += SwarmStep;
-            if (alien.IsTouchingEdge())
-            {
-                hitEdge = true;
-            }
-        }
-        if (hitEdge)
-        {
-            SwarmStep = SwarmStep * -1;
-            foreach (var alien in aliens)
-            {
-                alien.Y -= 20;
-            }
-        }
-    }
+		public void MoveSwarm()
+		{
+			bool hitEdge = false;
+			var aliens = GetSprites<AlienSprite>();
+			foreach (var alien in aliens)
+			{
+				alien.X += SwarmStep;
+				if (alien.IsTouchingEdge())
+				{
+					hitEdge = true;
+				}
+			}
+			if (hitEdge)
+			{
+				SwarmStep = SwarmStep * -1;
+				foreach (var alien in aliens)
+				{
+					alien.Y -= 20;
+				}
+			}
+		}
 --BRANCH: 10-MoveSwarm --
 	
 	

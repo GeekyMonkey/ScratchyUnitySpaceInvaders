@@ -219,6 +219,7 @@ MonoBehaviour:
   - {fileID: 100000, guid: 862a29444fbe40d44aee21ecfba7ea3b, type: 2}
   - {fileID: 100000, guid: e5e15baf3ebe6794dbd7e2e32fd2f696, type: 2}
   Columns: 10
+  SwarmStep: 20
 --- !u!4 &907010420
 Transform:
   m_ObjectHideFlags: 0
