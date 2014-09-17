@@ -101,6 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Costumes: []
   Speed: 200
+  ExplosionType: {fileID: 100000, guid: 4c3290debd7d5cc4282496976b0d18d6, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

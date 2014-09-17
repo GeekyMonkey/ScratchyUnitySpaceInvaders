@@ -205,11 +205,11 @@ Kids love explosions
 	doppler = 0
 	Linear rolloff
 	Make this a prefab and clear the crafting table
-	Open the missile script and add a public GameObject ExplosionType
+	Open the missile sprite script and add a public GameObject ExplosionType
 	Clone(ExplosionType, deadAlien.transform.position);
 	Ctrl+S to save and go to unity and drag the explosion to the explosion type
 	Go to the testing scene and play it
--- BRANCH: 10-Explosions
+-- BRANCH: 08-Explosions
 	
 Put the pieces into a game
     Edit the starfield graphic (Filter = Point, Format = TrueColor)
