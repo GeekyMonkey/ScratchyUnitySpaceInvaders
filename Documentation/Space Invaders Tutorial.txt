@@ -114,7 +114,7 @@ Add some animation
 Controlling the player
 	Open the Asset - Prefabs and select Player
 	Click Add Component and select new Script
-	Type PlayerScript
+	Type PlayerSprite
 	Double-click to open the editor
 	Change MonoBehaviour to ScratchySprite and delete the Start and Update functions
 	Type override and press space. Select OnUpdate
@@ -139,6 +139,7 @@ Controlling the player
 	While the game is running try selecing the player object in the hierarchy and changing the speed variable
 	Stop the game and notice the speed variable goes back to its initial value. Set this to the value you want.
 	Save the scene and the project
+-- BRANCH: 06-PlayerMove --
 	
 The Missile
 	In Assets Scenes select crafting table
@@ -160,6 +161,7 @@ The Missile
 	Delete it from the crafting table
 	Switch to our test scene and drag the missile just above the player
 	Play the game and the missile will make its sound and shoot up the screen, then disappear from the hierarchy after 5 seconds
+-- BRANCH: 07-Missile --
 	
 Shooting the missile
 	Open the player script and add a field			    public GameObject MissileType;
@@ -174,6 +176,7 @@ Shooting the missile
 	In the test scene delete the Missile object
 	Run the program and try moving and shooting
 	Stop, save the scene and project
+-- BRANCH: 08-Shooting --
 	
 Checking missile to alien collisions
     Open the missile script
@@ -191,6 +194,7 @@ Checking missile to alien collisions
 		Check Read/Write enabled
 		Go back to Normal mode (not debug)
 		Run again (success)
+-- BRANCH: 09-DestroyAliens --
 		
 Kids love explosions
 	Go to the crafting table
@@ -204,12 +208,11 @@ Kids love explosions
 	doppler = 0
 	Linear rolloff
 	Make this a prefab and clear the crafting table
-	
-Missiles Explode
 	Open the missile script and add a public GameObject ExplosionType
 	Clone(ExplosionType, deadAlien.transform.position);
 	Ctrl+S to save and go to unity and drag the explosion to the explosion type
 	Go to the testing scene and play it
+-- BRANCH: 10-Explosions
 	
 Put the pieces into a game
     Edit the starfield graphic (Filter = Point, Format = TrueColor)

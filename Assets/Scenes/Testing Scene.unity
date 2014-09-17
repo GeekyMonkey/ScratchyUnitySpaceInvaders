@@ -83,6 +83,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 15633234}
   - 212: {fileID: 15633233}
+  - 114: {fileID: 15633235}
   m_Layer: 0
   m_Name: SI_Player
   m_TagString: Untagged
@@ -125,6 +126,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &15633235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 424c1970b89fb1241adf435b7b48d033,
+    type: 2}
+  m_PrefabInternal: {fileID: 1961046274}
+  m_GameObject: {fileID: 15633232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85099e77d0237184686c9231d538ccc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Costumes: []
+  Speed: 100
 --- !u!1 &61019810
 GameObject:
   m_ObjectHideFlags: 0
