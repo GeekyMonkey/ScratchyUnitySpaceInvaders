@@ -3,7 +3,6 @@ using System.Collections;
 
 public class MissileSprite : ScratchySprite
 {
-
     public float Speed = 200;
     public GameObject ExplosionType;
 
@@ -22,8 +21,17 @@ public class MissileSprite : ScratchySprite
         if (deadAlien != null)
         {
             Clone(ExplosionType, deadAlien.transform.position);
+            
+            var pixels = deadAlien.ConvertToPixelQuads(true, true, 50);
             deadAlien.Destroy();
-            this.Destroy();
+            Wait(3, () =>
+            {
+                foreach (var pixel in pixels)
+                {
+                    Destroy(pixel);
+                }
+                this.Destroy();
+            });
         }
     }
 }
