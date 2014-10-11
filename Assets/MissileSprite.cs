@@ -1,14 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MissileSprite : ScratchySprite
+public class MissileSprite : MonoBehaviour
 {
     public float Speed = 200;
     public GameObject ExplosionType;
 
     public override void OnStart()
     {
-        Wait(5, Destroy);
+        ScratchySprite sprite = this.GetComponent<ScratchySprite>();
+
+        sprite.Wait(5, sprite.Destroy);
+
+        // Wait(5, Destroy);
     }
 
     public override void OnUpdate()
